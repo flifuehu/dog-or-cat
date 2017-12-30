@@ -117,7 +117,7 @@ model.fit_generator(train_generator,
                     callbacks=callbacks_array)
 
 # Save weights of the trained model
-# model.save_weights('vgg16_dogs_vs_cats.h5')
+model.save_weights('vgg16_dogs_vs_cats.h5')
 
 # show some predictions
 X_val, _ = next(test_generator)
